@@ -1,6 +1,18 @@
 # Fedora waifu2x installation guide
 
-This guide will provide you help for compiling torch7 and waifu2x for Fedora. This is not a step by step guide, you can follow the commands but the result could be different on your maschine. 
+Table of contents
+
+- [Fedora waifu2x installation guide](#fedora-waifu2x-installation-guide)
+  - [Motivation](#motivation)
+  - [Background - Basic Setup](#background---basic-setup)
+    - [installed Packages](#installed-packages)
+  - [Dependencies](#dependencies)
+    - [torch7](#torch7)
+    - [waifu2x](#waifu2x)
+  - [torch7](#torch7-1)
+  - [waifu2x](#waifu2x-1)
+
+This guide will provide you help for compiling torch7 and waifu2x for Fedora. This is not a step by step guide, you can follow the commands but the result could be different on your maschine.
 
 ## Motivation
 
