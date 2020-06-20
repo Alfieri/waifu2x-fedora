@@ -4,7 +4,7 @@ This guide will provide you help for compiling torch7 and waifu2x for Fedora. Th
 
 ## Motivation
 
-I write this because the information to compile this on Linux (if you are not running Ubuntu) are verly rare. To get this to work toke me 3 days and I was realy frustrated from time to time.
+I write this because the information to compile this on Linux (if you are not running Ubuntu) are verly rare. To get this to work toke me 3 days and I was really frustrated from time to time.
 
 ## Initial Setup
 
@@ -13,3 +13,17 @@ I write this because the information to compile this on Linux (if you are not ru
 - OS: Fedora 32 x86_64 (Kernel 5.6.16)
 - Nvidia Driver Version: 440.82
 - Cuda Version 10.2
+
+## Dependencies
+
+### torch7
+
+### waifu2x
+
+## torch7
+
+You need to install the dependencies for torch7 from the previous section.
+
+## waifu2x
+
+You need to install the dependencies for waifu2x from the previous section.
