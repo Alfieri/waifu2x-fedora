@@ -14,6 +14,20 @@ I write this because the information to compile this on Linux (if you are not ru
 - Nvidia Driver Version: 440.82
 - Cuda Version 10.2
 
+### installed Packages
+
+I did not know if it is really relevant what nvidia packages I have installed, but it also nice to know.
+
+This 3 nvidia package will come when you have the nvidia driver is installed via the preconfigured Nvidia Repo.
+
+- xorg-x11-drv-nvidia
+- xorg-x11-drv-nvidia-devel
+- xorg-x11-drv-nvidia-libs
+
+I have this installed additionaly.
+
+`dnf install xorg-x11-drv-nvidia-cuda xorg-x11-drv-nvidia-cuda-libs`
+
 ## Dependencies
 
 ### torch7
