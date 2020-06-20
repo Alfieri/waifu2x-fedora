@@ -6,9 +6,9 @@ This guide will provide you help for compiling torch7 and waifu2x for Fedora. Th
 
 I write this because the information to compile this on Linux (if you are not running Ubuntu) are verly rare. To get this to work toke me 3 days and I was really frustrated from time to time.
 
-## Initial Setup
+## Background - Basic Setup
 
-- Date (MM-dd-yyyy): 06-10-2020
+- creation date (MM-dd-yyyy): 06-10-2020
 - Hardware: Intel i5 3579K, 16GB Ram, Nvidia GeForce GTX 660 Ti
 - OS: Fedora 32 x86_64 (Kernel 5.6.16)
 - Nvidia Driver Version: 440.82
