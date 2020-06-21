@@ -12,7 +12,7 @@ Table of contents
   - [torch7](#torch7-1)
   - [waifu2x](#waifu2x-1)
 
-This guide will provide you help for compiling torch7 and waifu2x for Fedora. This is not a step by step guide, you can follow the commands but the result could be different on your maschine.
+This guide will provide you help for compiling torch7 ([torch7 Homepage](http://torch.ch/docs/getting-started.html)) and waifu2x ([waifu2x Github](https://github.com/nagadomi/waifu2x)) for Fedora. This is not a step by step guide, you can follow the commands but the result could be different on your maschine.
 
 ## Motivation
 
@@ -55,8 +55,31 @@ lua: `dnf install lua luarocks`
 
 ## torch7
 
+(this was for me the most difficult and frustrating part)
+
 First you need to install the dependencies for torch7 from the previous section.
+
+- clone it `git clone https://github.com/torch/distro.git torch7 --recursive`
+- modify install.sh and add
+  
+  ``` bash
+  export CC=gcc73
+  export CXX=g++73
+  ```
+
+  this will tell cmake to use gcc version 7.3 as compiler
+- install deps `bash install-deps`
+- run `./install.sh`
+
+Troubleshoot: if you have problem with compiling cutorch try this install command `TORCH_NVCC_FLAGS="-D__CUDA_NO_HALF_OPERATORS__" ./install.sh` ([Read more](https://github.com/torch/cutorch/issues/797#issuecomment-364602210))
+
+Troubleshoot: if the install command can not find the installed cuda version try this [Github issue](https://github.com/torch/cutorch/issues/834#issuecomment-428767642)(I have done step 2 and 3, I removed the FindCUDA.cmake and applied the patch)
 
 ## waifu2x
 
 First you need to install the dependencies for waifu2x from the previous section.
+
+- clone the repo `git clone --depth 1 https://github.com/nagadomi/waifu2x.git`
+- install `./install_lua_modules.sh`
+
+Troubleshoot: if you get out of memory errors try to play around with the parameters crop_size and model_dir
