@@ -42,14 +42,21 @@ I have this installed additionaly.
 
 ## Dependencies
 
+lua: `dnf install lua luarocks`
+
 ### torch7
+
+- gcc less then version 8 (required by Cuda 10.2), you will find a rpm package for gcc version 7.3 in this repo or you can take it from [stackoverflow](https://stackoverflow.com/questions/49018215/install-gcc-and-g-version-6-in-fedora-27)
 
 ### waifu2x
 
+- cuda: can be installed from [RPM Fusion](https://rpmfusion.org/Howto/CUDA)
+- some other libs: `dnf install snappy-devel GraphicsMagick-c++-devel openssl-devel`
+
 ## torch7
 
-You need to install the dependencies for torch7 from the previous section.
+First you need to install the dependencies for torch7 from the previous section.
 
 ## waifu2x
 
-You need to install the dependencies for waifu2x from the previous section.
+First you need to install the dependencies for waifu2x from the previous section.
